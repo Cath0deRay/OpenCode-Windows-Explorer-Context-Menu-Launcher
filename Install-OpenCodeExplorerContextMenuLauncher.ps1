@@ -25,7 +25,7 @@ $iconFile = if(Test-Path $env:LOCALAPPDATA\OpenCode\OpenCode.exe){
 	 "$env:LOCALAPPDATA\OpenCode\OpenCode.exe"
 }
 else{
-	"$env:SystemregistryPath\System32\cmd.exe"
+	"$env:SystemRoot\System32\cmd.exe"
 }
 
 $registryPath = if($AllUsers){ 'HKLM:\Software\Classes' } else { 'HKCU:\Software\Classes' }
